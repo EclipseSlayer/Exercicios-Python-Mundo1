@@ -1,0 +1,6 @@
+print('-'*60)
+print('Olá, por favor insira a baixo as informações para pagar o aluguel do seu carro')
+dias= int(input('Digite os dias Que ficou com o carro: '))
+km=float(input('Digite quantos KMs foi rodado: '))
+valor=(dias * 60) + (km * 0.15)
+print('o total para o pagamento do alugel é {:.2f}'.format(valor))

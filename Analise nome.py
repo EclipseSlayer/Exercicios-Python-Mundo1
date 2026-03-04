@@ -1,0 +1,5 @@
+n= str(input('Olá, quál é o seu nome?')).strip()
+print('prazer em te conhecer {}'.format(n))
+nome = n.split()
+print('o seu primeiro nome é {}'.format(nome[0]))
+print('o seu ultimo nome é {}'.format(nome[len(nome)-1]))
