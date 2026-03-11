@@ -1,16 +1,18 @@
 produto = input("Olá, coloque aqui qual é o produto: ")
 valor = float(input("Digite o valor do produto: "))
 opcaopagamento = input("Qual será a forma de pagamento? ").upper()
+desconto = 0.20
+desconto2 = 0.10
 
 if opcaopagamento == "DINHEIRO":
-    valorfinal = valor * (1 - 0.20)
+    valorfinal = valor * (1 - desconto)
     print(f"O valor final do produto é: R$ {valorfinal:.2f}")
 
 elif opcaopagamento == "CARTÃO" or "CARTAO":
     parcela = int(input("Digite a quantidade de parcelas: "))
 
     if parcela == 1:
-        valorfinal = valor * (1 - 0.10)
+        valorfinal = valor * (1 - desconto2)
         print(f"O valor final do produto é: R$ {valorfinal:.2f}")
 
     elif parcela == 2:
